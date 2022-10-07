@@ -1,7 +1,7 @@
 Ansible Role: java
 =========
 
-[![CI](https://gitlab.com/mslt/ansible-role.java/badges/master/pipeline.svg)](https://gitlab.com/mslt/ansible-role.java)
+[![CI](https://github.com/msltwtf/ansible-role.java/actions/workflows/ci.yml/badge.svg)](https://github.com/msltwtf/ansible-role.java/actions/workflows/ci.yml)
 
 An ansible role that installs openjdk-jre and optionally openjdk-jdk on RedHat/CentOS or Debian/Ubuntu.
 
