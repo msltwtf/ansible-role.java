@@ -1,0 +1,7 @@
+---
+
+- name: include os specific variables
+  include_vars: "os_{{ ansible_os_family }}.yml"
+
+- name: include os specific tasks
+  include_tasks: "os_{{ ansible_os_family }}.yml"

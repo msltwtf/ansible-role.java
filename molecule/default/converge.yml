@@ -1,0 +1,9 @@
+---
+- name: Converge
+  hosts: all
+  vars:
+    java_install_jdk: True
+  tasks:
+    - name: "Include role"
+      include_role:
+        name: "msltwtf.java"

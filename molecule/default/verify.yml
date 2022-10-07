@@ -1,0 +1,18 @@
+---
+# This is an example playbook to execute Ansible tests.
+
+- name: Verify
+  hosts: all
+  gather_facts: False
+  vars:
+    java_install_jdk: True
+  tasks:
+    - name: Check for java
+      file:
+        path: /usr/bin/java
+        state: file
+    - name: Check for javac
+      file:
+        path: /usr/bin/javac
+        state: file
+      when: java_install_jdk == True

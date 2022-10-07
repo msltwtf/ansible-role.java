@@ -1,0 +1,17 @@
+---
+
+- name: install java runtime environment
+  apt:
+    name: "{{ java_jre_package_name }}"
+    state: present
+    update_cache: True
+    cache_valid_time: 3600
+
+
+- name: install java development kit
+  apt:
+    name: "{{ java_jdk_package_name }}"
+    state: present
+    update_cache: True
+    cache_valid_time: 3600
+  when: java_install_jdk == True

@@ -1,0 +1,22 @@
+---
+
+dependencies: []
+
+galaxy_info:
+  role_name: java
+  author: msltwtf
+  description: Install java runtime and optionally sdk
+  license: MIT
+  min_ansible_version: 2.10
+  platforms:
+    - name: EL
+      versions:
+        - 8
+        - 9
+    - name: Debian
+      versions:
+        - all
+  galaxy_tags:
+    - java
+    - jre
+    - jdk

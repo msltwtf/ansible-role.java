@@ -1,0 +1,3 @@
+---
+java_jre_package_name: openjdk-{{ java_version }}-jre
+java_jdk_package_name: openjdk-{{ java_version }}-jdk

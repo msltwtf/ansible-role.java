@@ -1,0 +1,3 @@
+---
+java_jre_package_name: java-{{ java_version }}
+java_jdk_package_name: java-{{ java_version }}-devel
