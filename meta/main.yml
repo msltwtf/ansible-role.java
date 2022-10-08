@@ -15,7 +15,12 @@ galaxy_info:
         - 9
     - name: Debian
       versions:
-        - all
+        - jessie
+        - stretch
+        - buster
+        - bullseye
+        - bookworm
+        - sid
   galaxy_tags:
     - java
     - jre
