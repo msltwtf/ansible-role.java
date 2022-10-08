@@ -7,6 +7,7 @@ name: CI
       - main
   schedule:
     - cron: "0 17 * * 5"
+  workflow_call:
 
 defaults:
   run:
