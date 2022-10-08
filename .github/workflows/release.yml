@@ -10,9 +10,12 @@ defaults:
     working-directory: msltwtf.java
 
 jobs:
+  test:
+    uses: ./.github/workflows/ci.yml
   release:
     name: Release
     runs-on: ubuntu-latest
+    needs: [test]
     steps:
       - name: Checkout codebase
         uses: actions/checkout@v3
